@@ -1,0 +1,463 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Hipstyle - Booking</title>
+    <link rel="icon" href="img/favicon.png">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <!-- animate CSS -->
+    <link rel="stylesheet" href="css/animate.css">
+    <!-- owl carousel CSS -->
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
+    <!-- themify CSS -->
+    <link rel="stylesheet" href="css/themify-icons.css">
+    <!-- flaticon CSS -->
+    <link rel="stylesheet" href="css/flaticon.css">
+    <!-- font awesome CSS -->
+    <link rel="stylesheet" href="css/magnific-popup.css">
+    <!-- swiper CSS -->
+    <link rel="stylesheet" href="css/slick.css">
+    <link rel="stylesheet" href="css/gijgo.min.css">
+    <link rel="stylesheet" href="css/nice-select.css">
+    <link rel="stylesheet" href="css/all.css">
+    <!-- style CSS -->
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        /* Thay đổi màu nền cho trang */
+        body {
+            background-color: #e42727; /* Màu nền nhẹ nhàng */
+        }
+        
+        /* Màu nền cho phần booking */
+        .booking_part {
+            background-color: #ef2c2c; /* Màu nền xanh nhạt */
+            padding: 80px 0;
+        }
+        
+        /* Màu nền cho form booking */
+        .booking_form {
+            background-color: #ffffff;
+            padding: 40px;
+            border-radius: 10px;
+            box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1);
+        }
+        
+        /* Màu nền cho phần breadcrumb */
+        .breadcrumb_part {
+            background-color: #e9ecef; /* Màu xám nhạt */
+        }
+        
+        /* Màu nền cho nút đặt lịch */
+        .btn_3 {
+            background-color: #ff6a5b; /* Màu cam đậm hơn */
+        }
+        
+        .btn_3:hover {
+            background-color: #ff8c7f; /* Màu cam nhạt hơn khi hover */
+        }
+    </style>
+</head>
+
+<body>
+    <!--::header part start::-->
+    <header class="main_menu home_menu">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-12">
+                    <nav class="navbar navbar-expand-lg navbar-light">
+                        <a class="navbar-brand" href="index.html"> <img src="img/logo.png" alt="logo"> </a>
+                        <button class="navbar-toggler" type="button" data-toggle="collapse"
+                            data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                            aria-expanded="false" aria-label="Toggle navigation">
+                            <span class="menu_icon"></span>
+                        </button>
+
+                        <div class="collapse navbar-collapse main-menu-item"
+                            id="navbarSupportedContent">
+                            <ul class="navbar-nav">
+                                <li class="nav-item">
+                                    <a class="nav-link" href="index.html">Home</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="about.html">About</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="service.html">Service</a>
+                                </li>
+                                <li class="nav-item dropdown">
+                                    <a class="nav-link dropdown-toggle" href="blog.html" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                        Blog
+                                    </a>
+                                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                        <a class="dropdown-item" href="blog.html"> blog</a>
+                                        <a class="dropdown-item" href="single-blog.html">Single blog</a>
+                                        
+                                    </div>
+                                </li>
+                                <li class="nav-item dropdown">
+                                    <a class="nav-link dropdown-toggle" href="blog.html" id="navbarDropdown_1" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                        pages
+                                    </a>
+                                    <div class="dropdown-menu" aria-labelledby="navbarDropdown_1">
+                                        <a class="dropdown-item" href="team.html">team</a>
+                                        <a class="dropdown-item" href="price.html">price</a>
+                                        <a class="dropdown-item" href="elements.html">Elements</a>
+                                    </div>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="contact.html">Contact</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- Header part end-->
+
+    <!-- breadcrumb start-->
+    <section class="breadcrumb_part">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="breadcrumb_iner">
+                       
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- breadcrumb end-->
+
+    <!--::booking part start::-->
+    <section class="booking_part section_padding">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-8">
+                    <div class="section_tittle text-center">
+                        <img src="img/section_tittle_icon.png" alt="icon">
+                        <h2>Book Your Appointment</h2>
+                        <p style="color: black;">Schedule your visit for a perfect hairstyle experience. Our expert stylists are ready to transform your look.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="row justify-content-center">
+                <div class="col-lg-10">
+                    <div class="booking_form">
+                        <form action="#" method="post">
+                            <div class="form-row">
+                                <div class="form-group col-md-6">
+                                    <label for="inputName">Họ và tên</label>
+                                    <input type="text" class="form-control" id="inputName" placeholder="Nhập họ và tên" required>
+                                </div>
+                                <div class="form-group col-md-6">
+                                    <label for="inputPhone">Số điện thoại</label>
+                                    <input type="tel" class="form-control" id="inputPhone" placeholder="Nhập số điện thoại" required>
+                                </div>
+                                <div class="form-group col-md-12">
+                                    <label for="inputEmail">Email</label>
+                                    <input type="email" class="form-control" id="inputEmail" placeholder="Nhập địa chỉ email">
+                                </div>
+                                <div class="form-group col-md-6">
+                                    <label for="bookingDate">Ngày đặt lịch</label>
+                                    <input id="bookingDate" type="text" class="form-control datepicker" placeholder="Chọn ngày" required>
+                                </div>
+                                <div class="form-group col-md-6">
+                                    <label for="bookingTime">Thời gian đặt lịch</label>
+                                    <input id="bookingTime" type="time" class="form-control datepicker"  required />
+                                </div>
+                        
+                                <div class="form-group col-md-12">
+                                    <label for="notes">Ghi chú</label>
+                                    <textarea class="form-control" id="notes" rows="4" placeholder="Nhập ghi chú hoặc yêu cầu đặc biệt"></textarea>
+                                </div>
+                                <div class="col-md-12 text-center">
+                                    <button type="submit" class="btn_3">Đặt lịch ngay</button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--::booking part end::-->
+
+    <!-- footer part start-->
+    <footer class="footer-area">
+        <div class="container">
+            <div class="row justify-content-between">
+                <div class="col-xl-4 col-sm-6 col-lg-4">
+                    <div class="single-footer-widget footer_1">
+                        <h4>About Us</h4>
+                        <p>Do you want to be even more successful? Learn to love learning and growth. 
+                            The more effort you put into improving your skills, the bigger the payoff you
+                             will get. Realize that things </p>
+                        <p class="mt-3">The more effort you put into improving your skills, the bigger the stil now</p>
+                    </div>
+                </div>
+                <div class="col-xl-3 col-sm-6 col-lg-4">
+                    <div class="single-footer-widget footer_2">
+                        <h4>Contact us</h4>
+                        <div class="contact_info">
+                            <span class="ti-home"></span>
+                            <h5>Los angeles, United States</h5>
+                            <p>659, Rocky beach bullevard, santa monica, Rocky beach, USA.</p>
+                        </div>
+                        <div class="contact_info">
+                            <span class="ti-headphone-alt"></span>
+                            <h5>+44 6532 986 652</h5>
+                            <p>Mon to Fri 9am to 6 pm.</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-xl-4 col-sm-8 col-lg-4">
+                    <div class="single-footer-widget footer_3">
+                        <h4>Newsletter</h4>
+                        <p>Stay updated with our latest trends The more effort you put into improving your skills, the bigger the payoff you will get realize that things.</p>
+                        <div class="form-wrap" id="mc_embed_signup">
+                            <form target="_blank"
+                                action="https://spondonit.us12.list-manage.com/subscribe/post?u=1462626880ade1ac87bd9c93a&amp;id=92a4423d01"
+                                method="get" class="form-inline">
+                                <input class="form-control" name="EMAIL" placeholder="Your Email Address"
+                                    onfocus="this.placeholder = ''" onblur="this.placeholder = 'Your Email Address '"
+                                    required="" type="email">
+                                <button class="btn btn-default text-uppercase"><i class="ti-angle-right"></i></button>
+                                <div style="position: absolute; left: -5000px;">
+                                    <input name="b_36c4fd991d266f23781ded980_aefe40901a" tabindex="-1" value=""
+                                        type="text">
+                                </div>
+
+                                <div class="info"></div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="copyright_part">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-lg-12 text-center">
+                        <p class="footer-text m-0"><!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="fa fa-heart-o" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank">Colorlib</a>
+<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- footer part end-->
+
+    <!-- jquery plugins here-->
+    <script src="js/jquery-1.12.1.min.js"></script>
+    <!-- popper js -->
+    <script src="js/popper.min.js"></script>
+    <!-- bootstrap js -->
+    <script src="js/bootstrap.min.js"></script>
+    <!-- easing js -->
+    <script src="js/jquery.magnific-popup.js"></script>
+    <!-- swiper js -->
+    <script src="js/swiper.min.js"></script>
+    <!-- swiper js -->
+    <script src="js/masonry.pkgd.js"></script>
+    <!-- particles js -->
+    <script src="js/owl.carousel.min.js"></script>
+    <!-- swiper js -->
+    <script src="js/slick.min.js"></script>
+    <script src="js/gijgo.min.js"></script>
+    <script src="js/jquery.nice-select.min.js"></script>
+    <!-- contact js -->
+    <script src="js/jquery.ajaxchimp.min.js"></script>
+    <script src="js/jquery.form.js"></script>
+    <script src="js/jquery.validate.min.js"></script>
+    <script src="js/mail-script.js"></script>
+    <script src="js/contact.js"></script>
+    <!-- custom js -->
+    <script src="js/custom.js"></script>
+    
+    <script>
+        // Initialize datepicker
+        $('#bookingDate').datepicker({
+            format: 'dd-mm-yyyy',
+            uiLibrary: 'bootstrap4',
+            minDate: new Date()
+        });
+    </script>
+    <script>
+        // Thêm script này vào cuối file booking.html, trước thẻ </body>
+
+// Khi form được submit
+document.querySelector('.booking_form form').addEventListener('submit', function(e) {
+    e.preventDefault();
+
+    // Hiển thị trạng thái loading
+    const submitButton = document.querySelector('.btn_3');
+    const originalButtonText = submitButton.innerHTML;
+    submitButton.innerHTML = 'Đang xử lý...';
+    submitButton.disabled = true;
+
+    // Thu thập dữ liệu form - đảm bảo tên trường khớp với backend
+    const bookingData = {
+        fullName: document.getElementById('inputName').value,
+        phone: document.getElementById('inputPhone').value,
+        email: document.getElementById('inputEmail').value,
+        date: document.getElementById('bookingDate').value,
+        time: document.getElementById('bookingTime').value,
+        notes: document.getElementById('notes').value
+    };
+
+    console.log('Sending booking data:', bookingData);
+
+    // Gửi dữ liệu đến server
+    fetch('http://localhost:3000/api/bookings', {
+        method: 'POST',
+        headers: {
+            'Content-Type': 'application/json'
+        },
+        body: JSON.stringify(bookingData)
+    })
+    .then(response => {
+        if (!response.ok) {
+            throw new Error('Network response was not ok: ' + response.status);
+        }
+        return response.json();
+    })
+    .then(data => {
+        // Khôi phục nút submit
+        submitButton.innerHTML = originalButtonText;
+        submitButton.disabled = false;
+
+        if (data.success) {
+            // Ẩn form
+            const bookingForm = document.querySelector('.booking_form form');
+            bookingForm.style.display = 'none';
+
+            // Tạo phần tử hiển thị thông báo thành công
+            const successDiv = document.createElement('div');
+            successDiv.id = 'successMessage';
+            successDiv.className = 'booking_form';
+            successDiv.innerHTML = `
+                <div class="alert alert-success" role="alert">
+                    <h4 class="alert-heading text-center">Đặt lịch thành công!</h4>
+                    <p>Thông tin đặt lịch của bạn:</p>
+                    <ul>
+                        <li><strong>Họ và tên:</strong> ${bookingData.fullName}</li>
+                        <li><strong>Số điện thoại:</strong> ${bookingData.phone}</li>
+                        <li><strong>Email:</strong> ${bookingData.email || "Không có"}</li>
+                        <li><strong>Ngày hẹn:</strong> ${bookingData.date}</li>
+                        <li><strong>Giờ hẹn:</strong> ${bookingData.time}</li>
+                        <li><strong>Ghi chú:</strong> ${bookingData.notes || "Không có"}</li>
+                    </ul>
+                    <p class="mb-4">Chúng tôi sẽ liên hệ với bạn để xác nhận lịch hẹn.</p>
+                    <div class="text-center">
+                        <button class="btn_3" id="newBookingBtn">Đặt lịch mới</button>
+                        <button class="btn btn-outline-secondary ml-2" id="homeBtn">Về trang chủ</button>
+                    </div>
+                </div>
+            `;
+            
+            // Chèn thông báo thành công vào sau form
+            bookingForm.parentNode.appendChild(successDiv);
+
+            // Thêm sự kiện cho nút "Đặt lịch mới"
+            document.getElementById('newBookingBtn').addEventListener('click', function() {
+                bookingForm.reset();
+                bookingForm.style.display = 'block';
+                successDiv.remove();
+            });
+
+            // Thêm sự kiện cho nút "Về trang chủ"
+            document.getElementById('homeBtn').addEventListener('click', function() {
+                window.location.href = '/';  
+            });
+        } else {
+            // Hiển thị thông báo lỗi
+            alert('Có lỗi xảy ra: ' + data.message);
+        }
+    })
+    .catch(error => {
+        // Khôi phục nút submit
+        submitButton.innerHTML = originalButtonText;
+        submitButton.disabled = false;
+        
+        console.error('Lỗi:', error);
+        alert('Không thể kết nối với server. Vui lòng thử lại sau.');
+    });
+});
+
+// Thêm CSS cho thông báo thành công
+const style = document.createElement('style');
+style.textContent = `
+    #successMessage {
+        background-color: #ffffff;
+        padding: 30px;
+        border-radius: 10px;
+        box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1);
+        margin-top: 20px;
+    }
+    #successMessage .alert-success {
+        background-color: #d4edda;
+        border-color: #c3e6cb;
+        color: #155724;
+        padding: 30px;
+        border-radius: 5px;
+    }
+    #successMessage h4 {
+        color: #155724;
+        margin-bottom: 20px;
+    }
+    #successMessage ul {
+        list-style-type: none;
+        padding-left: 10px;
+        margin-bottom: 20px;
+    }
+    #successMessage li {
+        margin-bottom: 10px;
+        font-size: 16px;
+    }
+    #newBookingBtn {
+        background-color: #ff6a5b;
+        border: none;
+        color: white;
+        padding: 10px 20px;
+        border-radius: 5px;
+        cursor: pointer;
+    }
+    #newBookingBtn:hover {
+        background-color: #ff8c7f;
+    }
+    .ml-2 {
+        margin-left: 10px;
+    }
+    .mb-4 {
+        margin-bottom: 15px;
+    }
+    .text-center {
+        text-align: center;
+    }
+`;
+document.head.appendChild(style);
+
+// Khởi tạo datepicker với định dạng phù hợp
+$(document).ready(function() {
+    // Đảm bảo datepicker đã được khởi tạo đúng cách
+    if($.fn.datepicker && $('#bookingDate').length) {
+        $('#bookingDate').datepicker({
+            format: 'dd-mm-yyyy',
+            uiLibrary: 'bootstrap4',
+            minDate: new Date()
+        });
+    }
+});
+    </script>
+</body>
+
+</html>

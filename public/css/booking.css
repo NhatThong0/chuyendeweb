@@ -1,0 +1,96 @@
+/* Booking Section Styles */
+.booking {
+    padding: 50px 0;
+    background: linear-gradient(90deg, rgb(205, 89, 89), rgb(230, 80, 80), rgb(231, 8, 8));
+}
+
+/* Contact Header */
+.conatct-header {
+    text-align: center;
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 30px;
+}
+
+/* Form Styles */
+.contact100-form {
+    max-width: 600px;
+    margin: 0 auto;
+    background: white;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.wrap-input100 {
+    margin-bottom: 20px;
+    position: relative;
+}
+
+.label-input100 {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.input100, textarea.input100 {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+textarea.input100 {
+    height: 100px;
+    resize: none;
+}
+
+/* Submit Button */
+.contact100-form-btn {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    background-color: #007bff;
+    color: rgb(244, 242, 242);
+    border: none;
+    border-radius: 5px;
+    font-size: 18px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.contact100-form-btn:hover {
+    background-color: #0056b3;
+}
+
+/* Checkbox */
+.checkbox {
+    margin-top: 10px;
+}
+
+.checkbox label {
+    font-size: 14px;
+}
+
+/* Status Message */
+#status {
+    text-align: center;
+    font-size: 14px;
+    color: #dc3545;
+    margin-top: 10px;
+}
+
+/* Keep header spacing */
+header.main_menu {
+    margin-bottom: 60px;
+}
+.booking-header {
+    position: relative;
+    text-align: center;
+}
+
+.header_1{
+    display: block;
+    text-align: center;
+}
