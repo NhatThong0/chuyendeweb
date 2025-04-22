@@ -37,8 +37,13 @@ Vào tab Clusters → nhấn Connect → Connect your application
 
 Copy đoạn connection string, ví dụ:
 const uri = "mongodb+srv://<db_username>:<db_password>@nhatthong.jrdblvv.mongodb.net/?retryWrites=true&w=majority&appName=nhatthong";
-* Chú ý Thay thế <db_password> bằng mật khẩu cho người dùng cơ sở dữ liệu <db_username> 
+* Chú ý Thay thế <db_password> bằng mật khẩu cho người dùng cơ sở dữ liệu <db_username>
+tìm kiếm đoạn code này 
+  ![image](https://github.com/user-attachments/assets/5b0b198f-0d8d-4880-b780-e4bcb3e2eada)
+thay thế bằng url của code thành url vừa tạo ở trên.
+
 ✅ Chạy project : 
 nhập lệnh trong terminal : node server.js
 [bấm vào ](http://localhost:3000)
 trang admin : http://localhost:3000/admin.html
+
