@@ -62,6 +62,7 @@ app.post("/api/bookings", async (req, res) => {
       time: req.body.time,
       notes: req.body.notes,
       status: "", // Để trống ban đầu
+      confirmationLink: "",
       createdAt: new Date(),
     };
 
