@@ -52,9 +52,16 @@ app.post("/api/bookings", async (req, res) => {
     const db = await connectDB();
     const bookings = db.collection("bookings");
 
-    const { fullName, phone, email, date, time, notes } = req.body;
+    let { fullName, phone, email, date, time, notes } = req.body;
 
-    // Encode dữ liệu để truyền vào URL
+    // Chuyển đổi định dạng ngày nếu cần
+    if (date) {
+      // Đảm bảo date là định dạng YYYY-MM-DD
+      const formattedDate = new Date(date).toISOString().split('T')[0];
+      date = formattedDate;
+    }
+
+    // Encode dữ liệu để truyền vào URL webhook
     const ngayFormatted = encodeURIComponent(date);
     const gioFormatted = encodeURIComponent(time);
     const tenEncoded = encodeURIComponent(fullName);
@@ -68,15 +75,15 @@ app.post("/api/bookings", async (req, res) => {
     // Tạo bản ghi đặt lịch
     const bookingData = {
       fullName,
-      phone,
+      phone, 
       email,
-      date,
+      date: date, // Đã được format ở trên
       time,
       notes,
-      status: "", // có thể là "pending"
+      status: "",
       confirmationLink,
       cancelBooking,
-      createdAt: new Date(),
+      createdAt: new Date()
     };
 
     const result = await bookings.insertOne(bookingData);
