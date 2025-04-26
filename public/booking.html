@@ -284,13 +284,16 @@ Copyright &copy;<script>document.write(new Date().getFullYear());</script> All r
     <script src="js/custom.js"></script>
     
     <script>
-        // Initialize datepicker
+$(document).ready(function() {
+    if($.fn.datepicker && $('#bookingDate').length) {
         $('#bookingDate').datepicker({
-            format: 'dd-mm-yyyy',
+            format: 'yyyy-mm-dd',  // Thay đổi định dạng này
             uiLibrary: 'bootstrap4',
             minDate: new Date()
         });
-    </script>
+    }
+});
+</script>
     <script>
         // Thêm script này vào cuối file booking.html, trước thẻ </body>
 
@@ -445,18 +448,6 @@ style.textContent = `
     }
 `;
 document.head.appendChild(style);
-
-// Khởi tạo datepicker với định dạng phù hợp
-$(document).ready(function() {
-    // Đảm bảo datepicker đã được khởi tạo đúng cách
-    if($.fn.datepicker && $('#bookingDate').length) {
-        $('#bookingDate').datepicker({
-            format: 'dd-mm-yyyy',
-            uiLibrary: 'bootstrap4',
-            minDate: new Date()
-        });
-    }
-});
     </script>
 </body>
 
