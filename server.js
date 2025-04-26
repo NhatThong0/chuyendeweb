@@ -52,38 +52,28 @@ app.post("/api/bookings", async (req, res) => {
     const db = await connectDB();
     const bookings = db.collection("bookings");
 
-    let { fullName, phone, email, date, time, notes } = req.body;
+    const { fullName, phone, email, date, time, notes } = req.body;
 
-    // Chuyển đổi định dạng ngày nếu cần
-    if (date) {
-      // Đảm bảo date là định dạng YYYY-MM-DD
-      const formattedDate = new Date(date).toISOString().split('T')[0];
-      date = formattedDate;
-    }
-
-    // Encode dữ liệu để truyền vào URL webhook
+    // Encode dữ liệu để truyền vào URL
     const ngayFormatted = encodeURIComponent(date);
     const gioFormatted = encodeURIComponent(time);
     const tenEncoded = encodeURIComponent(fullName);
 
     // Tạo link xác nhận gửi tới webhook của n8n
     const confirmationLink = `https://6d91-117-3-0-140.ngrok-free.app/webhook/xacnhanlink/?ngay=${ngayFormatted}&gio=${gioFormatted}&ten=${tenEncoded}`;
-    
-    // Tạo link hủy
-    const cancelBooking = `https://6d91-117-3-0-140.ngrok-free.app/webhook/huylich/?ngay=${ngayFormatted}&gio=${gioFormatted}&ten=${tenEncoded}`;
 
-    // Tạo bản ghi đặt lịch
+    // Tạo bản ghi đặt lịch với cancelBooking trống
     const bookingData = {
       fullName,
-      phone, 
+      phone,
       email,
-      date: date, // Đã được format ở trên
+      date,
       time,
       notes,
-      status: "",
+      status: "", // Trạng thái ban đầu là trống
       confirmationLink,
-      cancelBooking,
-      createdAt: new Date()
+      cancelBooking: "", // Đặt cancelBooking là chuỗi rỗng
+      createdAt: new Date(),
     };
 
     const result = await bookings.insertOne(bookingData);
@@ -92,8 +82,7 @@ app.post("/api/bookings", async (req, res) => {
       success: true,
       message: "Đặt lịch thành công",
       bookingId: result.insertedId,
-      confirmationLink,
-      cancelBooking
+      confirmationLink
     });
   } catch (err) {
     console.error("Lỗi tạo đặt lịch:", err);
